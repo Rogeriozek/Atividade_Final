@@ -1,0 +1,29 @@
+/* src/components/NavBar.css */
+.navbar .profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+}
+
+.navbar .nav-link {
+  cursor: pointer;
+}
+
+.navbar .btn-link {
+  padding: 0;
+  color: inherit;
+}
+
+.navbar .dropdown-menu {
+  min-width: 120px;
+  right: 0;
+  left: auto;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  cursor: pointer;
+}

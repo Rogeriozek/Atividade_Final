@@ -1,0 +1,35 @@
+/* src/components/Home.css */
+.home-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Tela cheia */
+  background: url('/public/tech-background.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.home-content {
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.home-content .btn {
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+}

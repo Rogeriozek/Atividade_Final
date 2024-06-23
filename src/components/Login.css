@@ -1,0 +1,50 @@
+/* src/components/Login.css */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--login-bg-color);
+  color: var(--text-color);
+  padding: 20px;
+}
+
+.login-content {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.login-content p {
+  margin-bottom: 1.5rem;
+}
+
+.login-content .btn {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Estilos para tema claro */
+body.light {
+  --login-bg-color: #f4f4f4;
+  --bg-color: #ffffff;
+  --text-color: #333333;
+}
+
+/* Estilos para tema escuro */
+body.dark {
+  --login-bg-color: #121212;
+  --bg-color: #333333;
+  --text-color: #f4f4f4;
+}

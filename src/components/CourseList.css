@@ -1,0 +1,26 @@
+/* src/components/CourseList.css */
+.container {
+  padding: 1rem;
+}
+
+.table {
+  margin-top: 1rem;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table .btn {
+  margin-right: 0.5rem;
+}
+
+.table .btn:last-child {
+  margin-right: 0;
+}
+
+.text-center {
+  text-align: center;
+}

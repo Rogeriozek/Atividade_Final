@@ -1,0 +1,92 @@
+/* src/components/AddDiscipline.css */
+.add-discipline-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .add-discipline-content {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .add-discipline-content h2,
+  .add-discipline-content h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .add-discipline-content input,
+  .add-discipline-content textarea {
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    background-color: var(--input-bg-color);
+    color: var(--input-text-color);
+  }
+  
+  .add-discipline-content textarea {
+    height: 80px;
+  }
+  
+  .add-discipline-content .btn {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .add-discipline-content .btn-sm {
+    width: auto;
+    padding: 0.25rem 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .table {
+    margin-top: 1rem;
+  }
+  
+  .table th,
+  .table td {
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  .table .btn {
+    margin-right: 0.5rem;
+  }
+  
+  .table .btn:last-child {
+    margin-right: 0;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Estilos para tema claro */
+  body.light {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --input-bg-color: #ffffff;
+    --input-text-color: #333333;
+    --input-border-color: #cccccc;
+  }
+  
+  /* Estilos para tema escuro */
+  body.dark {
+    --bg-color: #333333;
+    --text-color: #f4f4f4;
+    --input-bg-color: #444444;
+    --input-text-color: #f4f4f4;
+    --input-border-color: #666666;
+  }
+  
