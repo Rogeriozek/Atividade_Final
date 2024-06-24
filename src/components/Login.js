@@ -14,6 +14,7 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         setUser({
+          uid: user.uid,
           name: user.displayName,
           email: user.email,
           picture: user.photoURL,

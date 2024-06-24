@@ -1,13 +1,11 @@
 // src/components/CourseList.js
 import React, { useContext } from 'react';
-import { useNavigate } from 'react-router-dom'; // Importar useNavigate
 import { CourseContext } from '../context/CourseContext';
 import CourseItem from './CourseItem';
 import './CourseList.css';
 
 const CourseList = () => {
   const { courses } = useContext(CourseContext);
-  const navigate = useNavigate(); // Hook para navegação
 
   return (
     <div className="container mt-4">
