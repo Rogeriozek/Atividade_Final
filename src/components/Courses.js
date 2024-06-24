@@ -1,4 +1,3 @@
-// src/components/Courses.js
 import React from 'react';
 import AddCourse from './AddCourse';
 import CourseList from './CourseList';

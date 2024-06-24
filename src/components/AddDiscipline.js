@@ -1,4 +1,3 @@
-// src/components/AddDiscipline.js
 import React, { useState, useContext, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { CourseContext } from '../context/CourseContext';
@@ -41,7 +40,7 @@ const AddDiscipline = () => {
     }
   }, [courses, courseId]);
 
-  const handleAddOrUpdateDiscipline = async () => {
+  const AddOrUpdateDiscipline = async () => {
     if (disciplineName.trim() === '' || disciplineDuration.trim() === '' || disciplineDescription.trim() === '') {
       toast.error('Todos os campos são obrigatórios');
       return;
@@ -72,7 +71,7 @@ const AddDiscipline = () => {
     }
   };
 
-  const handleDeleteDiscipline = async (disciplineId) => {
+  const DeleteDiscipline = async (disciplineId) => {
     try {
       const disciplineDoc = doc(firestore, 'disciplines', disciplineId);
       await deleteDoc(disciplineDoc);
@@ -84,7 +83,7 @@ const AddDiscipline = () => {
     }
   };
 
-  const handleEditDiscipline = (discipline) => {
+  const EditDiscipline = (discipline) => {
     setDisciplineName(discipline.name);
     setDisciplineDuration(discipline.duration);
     setDisciplineDescription(discipline.description);
@@ -119,7 +118,7 @@ const AddDiscipline = () => {
           value={disciplineDescription}
           onChange={(e) => setDisciplineDescription(e.target.value)}
         />
-        <button className="btn btn-primary" onClick={handleAddOrUpdateDiscipline}>
+        <button className="btn btn-primary" onClick={AddOrUpdateDiscipline}>
           {editingDisciplineId ? 'Atualizar Disciplina' : 'Adicionar Disciplina'}
         </button>
         <h3>Disciplinas Existentes</h3>
@@ -162,7 +161,7 @@ const AddDiscipline = () => {
                         />
                       </td>
                       <td>
-                        <button className="btn btn-success btn-sm mr-2" onClick={handleAddOrUpdateDiscipline}>Salvar</button>
+                        <button className="btn btn-success btn-sm mr-2" onClick={AddOrUpdateDiscipline}>Salvar</button>
                         <button className="btn btn-secondary btn-sm" onClick={resetForm}>Cancelar</button>
                       </td>
                     </>
@@ -172,8 +171,8 @@ const AddDiscipline = () => {
                       <td>{discipline.duration}</td>
                       <td>{discipline.description}</td>
                       <td>
-                        <button className="btn btn-warning btn-sm mr-2" onClick={() => handleEditDiscipline(discipline)}>Alterar</button>
-                        <button className="btn btn-danger btn-sm" onClick={() => handleDeleteDiscipline(discipline.id)}>Deletar</button>
+                        <button className="btn btn-warning btn-sm mr-2" onClick={() => EditDiscipline(discipline)}>Alterar</button>
+                        <button className="btn btn-danger btn-sm" onClick={() => DeleteDiscipline(discipline.id)}>Deletar</button>
                       </td>
                     </>
                   )}

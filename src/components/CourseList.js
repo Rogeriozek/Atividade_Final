@@ -1,4 +1,3 @@
-// src/components/CourseList.js
 import React, { useContext } from 'react';
 import { CourseContext } from '../context/CourseContext';
 import CourseItem from './CourseItem';

@@ -1,18 +1,17 @@
-// src/components/Home.js
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { UserContext } from '../context/UserContext'; // Importar UserContext
+import { UserContext } from '../context/UserContext';
 import './Home.css';
 
 const Home = () => {
   const navigate = useNavigate();
-  const { user } = useContext(UserContext); // Usar contexto do usuário
+  const { user } = useContext(UserContext);
 
   const handleLearnMoreClick = () => {
     if (user) {
-      navigate('/courses'); // Redirecionar para cursos se usuário estiver logado
+      navigate('/courses')
     } else {
-      navigate('/login'); // Redirecionar para login se não estiver logado
+      navigate('/login'); 
     }
   };
 

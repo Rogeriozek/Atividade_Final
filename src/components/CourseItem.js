@@ -1,4 +1,3 @@
-// src/components/CourseItem.js
 import React, { useState, useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CourseContext } from '../context/CourseContext';

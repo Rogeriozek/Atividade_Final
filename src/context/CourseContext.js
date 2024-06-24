@@ -1,4 +1,3 @@
-// src/context/CourseContext.js
 import React, { createContext, useState, useEffect } from 'react';
 import { collection, getDocs, addDoc, updateDoc, deleteDoc, doc } from 'firebase/firestore';
 import { firestore } from '../firebase';

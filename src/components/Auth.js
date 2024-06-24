@@ -1,4 +1,3 @@
-// src/components/Auth.js
 import React, { useContext } from 'react';
 import { signInWithGoogle } from '../firebase';
 import { UserContext } from '../context/UserContext';
@@ -32,4 +31,4 @@ const Auth = () => {
   );
 };
 
-export default Auth;  // Certifique-se de que `Auth` é exportado como `default`
+export default Auth; 
